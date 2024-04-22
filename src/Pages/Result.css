@@ -1,0 +1,27 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.trophy {
+  width: 15%;
+  align-self: center;
+  /* padding: 8px; */
+  /* position: fixed;
+  margin-top: 2px; */
+}
+
+@media (max-width: 500px) {
+  .trophy {
+    flex-direction: column-reverse;
+    align-items: center;
+    
+    width: 75%;
+    padding: 0;
+    padding-top: 0px;
+  }
+  
+}
