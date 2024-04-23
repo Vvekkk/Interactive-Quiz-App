@@ -1,6 +1,6 @@
 import axios from "axios"
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer.jsx';
 import Header from './components/Header.jsx';
@@ -26,7 +26,7 @@ const App = () => {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='app' style={{backgroundImage: "url(./ques1.png)"}}>
         <Header/>
 
@@ -53,7 +53,7 @@ const App = () => {
 
       </div>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
